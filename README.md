@@ -1,2 +1,1 @@
-# Dubbo-samples
-Samples code when I study Dubbo 
+# Samples code when I study Dubbo 
