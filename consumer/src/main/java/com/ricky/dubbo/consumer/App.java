@@ -6,7 +6,7 @@ import com.ricky.dubbo.demo.DemoService;
 import com.ricky.dubbo.demo.model.User;
 
 /**
- * Dubbo client
+ * Dubbo Consumer client
  *
  */
 public class App {
