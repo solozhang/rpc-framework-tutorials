@@ -3,8 +3,14 @@
 # Java class files
 *.class
 
-.settings/
+/.settings/
 
 # Eclipse project files
-.classpath
-.project
+/.classpath
+/.project
+
+# logs
+/stacktrace.log
+/logs
+*.log
+*.log.*
