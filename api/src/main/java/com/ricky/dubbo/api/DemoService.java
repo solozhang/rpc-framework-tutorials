@@ -1,6 +1,6 @@
-package com.ricky.dubbo.demo;
+package com.ricky.dubbo.api;
 
-import com.ricky.dubbo.demo.model.User;
+import com.ricky.dubbo.api.model.User;
 
 public interface DemoService {
  

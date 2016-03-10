@@ -1,7 +1,7 @@
 package com.ricky.dubbo.provider.impl;
 
-import com.ricky.dubbo.demo.DemoService;
-import com.ricky.dubbo.demo.model.User;
+import com.ricky.dubbo.api.DemoService;
+import com.ricky.dubbo.api.model.User;
 
 public class DemoServiceImpl implements DemoService {
  

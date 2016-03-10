@@ -1,4 +1,4 @@
-package com.ricky.dubbo.demo;
+package com.ricky.dubbo.api;
 
 /**
  * Hello world!
