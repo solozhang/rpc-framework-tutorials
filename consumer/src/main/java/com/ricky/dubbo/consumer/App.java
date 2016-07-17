@@ -14,7 +14,7 @@ public class App {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				new String[] { "consumer.xml" });
+				new String[] { "spring-dubbo.xml" });
 		context.start();
 
 		DemoService demoService = (DemoService) context.getBean("demoService"); // 获取远程服务代理

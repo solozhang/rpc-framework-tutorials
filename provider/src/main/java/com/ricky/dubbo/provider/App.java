@@ -13,7 +13,7 @@ public class App {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				new String[] { "provider.xml" });
+				new String[] { "spring-dubbo.xml" });
 		context.start();
 		
 		System.out.println("Dubbo provider start...");

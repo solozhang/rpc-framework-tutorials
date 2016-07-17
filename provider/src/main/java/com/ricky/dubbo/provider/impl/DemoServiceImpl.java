@@ -1,8 +1,11 @@
 package com.ricky.dubbo.provider.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.ricky.dubbo.api.DemoService;
 import com.ricky.dubbo.api.model.User;
 
+@Service("demoService")
 public class DemoServiceImpl implements DemoService {
  
 	@Override
