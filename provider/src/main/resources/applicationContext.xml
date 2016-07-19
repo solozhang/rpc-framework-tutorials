@@ -9,7 +9,7 @@
        http://www.springframework.org/schema/context/spring-context.xsd"
 	   default-lazy-init="false">
 
-	<context:component-scan base-package="com.ricky.dubbo" />
+	<context:component-scan base-package="com.ricky.codelab.dubbo" />
 
 	<context:annotation-config />
 	

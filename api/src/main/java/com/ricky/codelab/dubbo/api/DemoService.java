@@ -1,6 +1,6 @@
-package com.ricky.dubbo.api;
+package com.ricky.codelab.dubbo.api;
 
-import com.ricky.dubbo.api.model.User;
+import com.ricky.codelab.dubbo.api.model.User;
 
 public interface DemoService {
  

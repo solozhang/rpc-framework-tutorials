@@ -1,8 +1,7 @@
-package com.ricky.dubbo.provider.impl;
-
-import org.springframework.stereotype.Service;
+package com.ricky.codelab.dubbo.provider.impl;
 
 import com.ricky.dubbo.api.HelloService;
+import org.springframework.stereotype.Service;
 
 @Service("helloService")
 public class HelloServiceImpl implements HelloService {

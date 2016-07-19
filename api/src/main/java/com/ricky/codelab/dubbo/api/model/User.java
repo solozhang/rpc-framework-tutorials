@@ -1,4 +1,4 @@
-package com.ricky.dubbo.api.model;
+package com.ricky.codelab.dubbo.api.model;
 
 import java.io.Serializable;
 

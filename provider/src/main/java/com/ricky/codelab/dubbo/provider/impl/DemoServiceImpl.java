@@ -1,9 +1,9 @@
-package com.ricky.dubbo.provider.impl;
+package com.ricky.codelab.dubbo.provider.impl;
 
+import com.ricky.codelab.dubbo.api.DemoService;
+import com.ricky.codelab.dubbo.api.model.User;
 import org.springframework.stereotype.Service;
 
-import com.ricky.dubbo.api.DemoService;
-import com.ricky.dubbo.api.model.User;
 
 @Service("demoService")
 public class DemoServiceImpl implements DemoService {

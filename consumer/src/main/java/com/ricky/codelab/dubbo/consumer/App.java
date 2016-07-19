@@ -1,9 +1,8 @@
-package com.ricky.dubbo.consumer;
+package com.ricky.codelab.dubbo.consumer;
 
+import com.ricky.codelab.dubbo.api.DemoService;
+import com.ricky.codelab.dubbo.api.model.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.ricky.dubbo.api.DemoService;
-import com.ricky.dubbo.api.model.User;
 
 /**
  * Dubbo Consumer client

@@ -1,4 +1,4 @@
-package com.ricky.dubbo.provider;
+package com.ricky.codelab.dubbo.provider;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ public class App {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				new String[] { "spring-dubbo.xml" });
+				new String[] { "applicationContext.xml" });
 		context.start();
 		
 		System.out.println("Dubbo provider start...");
