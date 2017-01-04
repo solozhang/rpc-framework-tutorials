@@ -1,1 +1,2 @@
-# Samples code when I study Dubbo 
+# dubbo-in-action
+Alibaba [Dubbo](https://github.com/alibaba/dubbo) in action.
