@@ -4,24 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bytebeats</groupId>
-    <artifactId>rpc-framework-tutorial</artifactId>
+    <groupId>com.mindflow</groupId>
+    <artifactId>rpc-framework-tutorials</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>demo-api</module>
-        <module>dubbo-provider</module>
-        <module>dubbo-consumer</module>
-        <module>motan-provider</module>
-        <module>motan-consumer</module>
+        <module>dubbo-demo</module>
+        <module>motan-demo</module>
     </modules>
 
     <properties>
+        <motan.version>0.3.0</motan.version>
         <!-- 在阿里巴巴内部广泛使用的GA版本为：2.4.9，强烈推荐此版本 -->
-        <motan.version>0.2.3</motan.version>
         <dubbo.version>2.5.3</dubbo.version>
-        <spring.version>4.2.7.RELEASE</spring.version>
+        <spring.version>4.3.6.RELEASE</spring.version>
         <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -49,31 +47,6 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
                 <version>${spring.version}</version>
-            </dependency>
-
-            <!--dubbo-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
-
-            <!--motan-->
-            <dependency>
-                <groupId>com.weibo</groupId>
-                <artifactId>motan-core</artifactId>
-                <version>${motan.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.weibo</groupId>
-                <artifactId>motan-transport-netty</artifactId>
-                <version>${motan.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.weibo</groupId>
-                <artifactId>motan-springsupport</artifactId>
-                <version>${motan.version}</version>
             </dependency>
 
             <!--log-->
