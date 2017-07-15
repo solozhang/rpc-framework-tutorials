@@ -66,12 +66,7 @@
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
-        <!--dubbo-->
+        <!--dubbox, dubbox 2.8.x 没有publish到maven中央仓库, 需要自己install到本地或者push到公司maven私服-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>

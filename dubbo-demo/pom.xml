@@ -64,11 +64,6 @@
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
         <!--dubbo-->
         <dependency>
             <groupId>com.alibaba</groupId>
