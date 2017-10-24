@@ -2,18 +2,25 @@
 Java分布式RPC服务框架教程，包括 Dubbo/Dubbox, Motan, gRPC.
 
 ## Dubbo
-阿里巴巴 [Dubbo](https://github.com/alibaba/dubbo).
+Alibaba [Dubbo](https://github.com/alibaba/dubbo).
 
 ## Dubbox
-当当网 [Dubbox](https://github.com/dangdangdotcom/dubbox).
+dangdang.com [Dubbox](https://github.com/dangdangdotcom/dubbox).
 
 ## Motan
-新浪微博 [Motan](https://github.com/weibocom/motan).
+Weibo [Motan](https://github.com/weibocom/motan).
 
 ## gRPC
 Google [gRPC](http://grpc.io).
 
 [gRPC Basics - Java](https://grpc.io/docs/tutorials/basic/java.html)
 
+## Apache Thrift
+[Apache Thrift](https://thrift.apache.org/)
+[Facebook's branch of Apache Thrift](https://github.com/facebook/fbthrift)
+
+## Apache Avro
+[Apache Avro](https://avro.apache.org/)
+
 ## Mango
-鄙人基于Netty4 + Zookeeper + protostuff开发的RPC框架[Mango](https://github.com/TiFG/mango).
+本人基于Netty4 + Zookeeper + protostuff开发的RPC框架[mango](https://github.com/TiFG/mango).
