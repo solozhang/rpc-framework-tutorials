@@ -15,6 +15,9 @@ Google [gRPC](http://grpc.io).
 
 [gRPC Basics - Java](https://grpc.io/docs/tutorials/basic/java.html)
 
+## brpc
+Baidu [brpc](https://github.com/brpc/brpc)
+
 ## Apache Thrift
 [Apache Thrift](https://thrift.apache.org/)
 [Facebook's branch of Apache Thrift](https://github.com/facebook/fbthrift)
