@@ -18,11 +18,11 @@ Google [gRPC](http://grpc.io).
 ## brpc
 Baidu [brpc](https://github.com/brpc/brpc)
 
-## Apache Thrift
+## Thrift
 [Apache Thrift](https://thrift.apache.org/)
 [Facebook's branch of Apache Thrift](https://github.com/facebook/fbthrift)
 
-## Apache Avro
+## Avro
 [Apache Avro](https://avro.apache.org/)
 
 ## Mango
