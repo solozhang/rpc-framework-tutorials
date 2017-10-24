@@ -20,7 +20,8 @@ Baidu [brpc](https://github.com/brpc/brpc)
 
 ## Thrift
 [Apache Thrift](https://thrift.apache.org/)
-[Facebook's branch of Apache Thrift](https://github.com/facebook/fbthrift)
+<br>
+[Facebook Thrift](https://github.com/facebook/fbthrift)
 
 ## Avro
 [Apache Avro](https://avro.apache.org/)
