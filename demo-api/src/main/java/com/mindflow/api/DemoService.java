@@ -4,7 +4,7 @@ import com.mindflow.api.model.User;
 
 public interface DemoService {
  
-	public String sayHello(String name);
+	String sayHello(String name);
  
-    public User findUserById(long id);
+    User findUserById(Long id);
 }

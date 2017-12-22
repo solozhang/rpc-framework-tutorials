@@ -9,12 +9,9 @@
     </parent>
 
     <artifactId>demo-api</artifactId>
+    <packaging>jar</packaging>
 
-    <name>demo-api</name>
+    <name>${project.artifactId}</name>
     <url>http://maven.apache.org</url>
-
-    <dependencies>
-
-    </dependencies>
 
 </project>

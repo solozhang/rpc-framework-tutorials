@@ -4,21 +4,24 @@
     xmlns:context="http://www.springframework.org/schema/context"
     xmlns:util="http://www.springframework.org/schema/util"
     xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
-       	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd
-       	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
- 
+
+    <context:component-scan base-package="com.mindflow.dubbo.consumer" />
+    <context:annotation-config />
+
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
-    <dubbo:application name="#{dubbo['appname']}"  />
+    <dubbo:application name="dubbo-demo-consumer"  />
  
  	<!-- 使用zookeeper注册中心暴露服务地址 -->
     <!--<dubbo:registry address="zookeeper://127.0.0.1:2181" />-->
 
     <!-- 使用multicast广播注册中心暴露服务地址 -->
-    <dubbo:registry address="#{dubbo['address']}" />
+    <dubbo:registry address="multicast://224.5.6.7:1234"/>
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" interface="com.mindflow.api.DemoService" />
+    <dubbo:reference id="demoService" interface="com.mindflow.api.DemoService" version="1.0.0" retries="0" />
  
 </beans>

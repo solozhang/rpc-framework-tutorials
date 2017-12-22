@@ -8,12 +8,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Dubbo provider
  *
  */
-public class App {
+public class DubboProvider {
 
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				"classpath:applicationContext.xml");
+				"classpath:dubbo-demo-provider.xml");
 		context.start();
 		
 		System.out.println("Dubbo provider start...");

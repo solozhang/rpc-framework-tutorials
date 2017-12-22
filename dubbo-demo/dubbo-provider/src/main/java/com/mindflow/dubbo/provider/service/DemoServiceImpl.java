@@ -13,7 +13,7 @@ public class DemoServiceImpl implements DemoService {
     }
 
 	@Override
-	public User findUserById(long id) {
+	public User findUserById(Long id) {
 		
 		User user = new User();
 		user.setId(id);

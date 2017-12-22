@@ -9,12 +9,9 @@
     </parent>
 
     <artifactId>dubbo-consumer</artifactId>
+    <packaging>jar</packaging>
 
-    <name>dubbo-consumer</name>
+    <name>${project.artifactId}</name>
     <url>http://maven.apache.org</url>
-
-    <dependencies>
-
-    </dependencies>
 
 </project>

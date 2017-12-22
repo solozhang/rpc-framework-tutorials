@@ -9,12 +9,9 @@
     </parent>
 
     <artifactId>dubbo-provider</artifactId>
+    <packaging>jar</packaging>
 
-    <name>dubbo-provider</name>
+    <name>${project.artifactId}</name>
     <url>http://maven.apache.org</url>
-
-    <dependencies>
-
-    </dependencies>
 
 </project>

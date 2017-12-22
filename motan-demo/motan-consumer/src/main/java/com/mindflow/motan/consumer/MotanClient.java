@@ -7,11 +7,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Hello world!
  *
  */
-public class App {
+public class MotanClient {
 
     public static void main( String[] args ) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:motan-demo-consumer.xml");
 
         DemoService demoService = (DemoService) context.getBean("demoService");
         demoService.sayHello("ricky");

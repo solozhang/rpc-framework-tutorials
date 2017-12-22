@@ -1,6 +1,6 @@
 <configuration debug="false">
-    <contextName>dubbo-provider</contextName>
-    <property name="LOG_HOME" value="D:/logs/" />
+    <contextName>dubbo-demo-provider</contextName>
+    <property name="LOG_DIR" value="D:/logs/" />
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -8,31 +8,34 @@
         </encoder>
     </appender>
 
-    <appender name="Info" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/info/dubbo-provider-info.log</file>
-        <appender>true</appender>
-        <Encoding>UTF-8</Encoding>
+    <appender name="appInfo" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/info/dubbo-demo-provider.log</file>
+        <append>true</append>
 
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
         </filter>
 
-        <!-- 每天生成日志文件 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/info/dubbo-provider.%d{yyyy-MM-dd}-info.log.gz
+            <fileNamePattern>${LOG_DIR}/info/dubbo-demo-provider.%d{yyyy-MM-dd}-info.log.gz
             </fileNamePattern>
-            <!-- 日志文件保留15天 -->
             <maxHistory>360</maxHistory>
         </rollingPolicy>
 
-        <!-- 格式化输出 -->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
         </encoder>
     </appender>
 
+    <!-- AsyncAppender -->
+    <appender name="appInfoAsync" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>10</discardingThreshold>
+        <queueSize>2000</queueSize>
+        <appender-ref ref="appInfo" />
+    </appender>
+
     <root level="INFO">
         <appender-ref ref="STDOUT" />
-        <appender-ref ref="Info" />
+        <appender-ref ref="appInfoAsync" />
     </root>
 </configuration>
