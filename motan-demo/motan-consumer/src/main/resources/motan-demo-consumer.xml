@@ -15,7 +15,7 @@
     <motan:protocol id="motan" name="motan" />
 
     <!--使用Zookeeper作为注册中心-->
-    <motan:registry regProtocol="zookeeper" name="zk" address="localhost:2181"/>
+    <motan:registry regProtocol="zookeeper" name="zk" address="172.30.73.10:2181"/>
 
     <!-- 通用配置，多个rpc服务使用相同的基础配置. group和module定义具体的服务池。export格式为“protocol id:提供服务的端口” -->
     <motan:basicService id="serviceBasicConfig" export="motan:20910" group="motan-demo-rpc" module="motan-demo-rpc" registry="zk"/>

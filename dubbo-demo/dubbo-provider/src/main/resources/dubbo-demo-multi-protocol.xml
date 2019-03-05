@@ -16,7 +16,7 @@
     <dubbo:application name="dubbo-demo-provider"  />
  
  	<!-- 使用zookeeper注册中心暴露服务地址 -->
-    <dubbo:registry id="zk_registry" address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry id="zk_registry" address="zookeeper://172.30.73.10:2181" />
  
  	<!-- 多协议配置 -->
     <dubbo:protocol name="dubbo" port="21996" />
